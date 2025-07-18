@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo/animation</title>
+    <style>
+        .pseudo{
+            height: 50px;
+            width: 150px;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            border-radius: 35px;
+
+            transition-property: all;
+            transition-duration: .4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: .2s;
+
+        }
+        .pseudo:hover {
+            height: 60px;
+            width: 180px;
+            color: white;
+            font-weight: 700;
+            font-size: 21px;
+            background-color: rgb(8, 94, 253);
+        }
+        .pseudo:active{
+            height: 60px;
+            width: 180px;
+            background-color: rgb(11, 9, 12);
+        }
+
+    </style>
+</head>
+<body>
+    <button class="pseudo">Smash</button>
+</body>
+</html>

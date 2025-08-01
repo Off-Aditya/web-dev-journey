@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #cff8df;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #80ff8b;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .circle{
+            background-color: rgb(6, 133, 39);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .container{
+            border: 3px solid;
+            margin: 5px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            display: inline-block;
+            background-color: rgb(132, 193, 247);
+        }
+        #box4{
+            position: fixed;
+            right: 10px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            background-color: #27ec76;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>Navbar</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="circle"></div>
+        <div class="container">
+            <div id="box1" class="box">Box 1</div>
+            <div id="box2" class="box">Box 2</div>
+            <div id="box3" class="box">Box 3</div>
+        </div>
+        <div id="box4" class="box">Box 4</div>
+    </main>
+
+    <footer>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi blanditiis mollitia voluptas in quo illum eum error eos enim ab recusandae sed esse eveniet suscipit a, nobis, quam magnam. Laborum doloremque possimus, iure cum aliquam architecto enim animi, voluptatum vero voluptas expedita nobis sit ut sequi quo dolor labore velit nihil earum praesentium soluta ipsam consequuntur. Eaque at quibusdam tenetur, voluptate deleniti reiciendis. Quaerat molestias consequuntur reprehenderit sunt dignissimos voluptatibus minus provident saepe vitae doloribus.
+    </footer>
+</body>
+
+</html>

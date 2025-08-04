@@ -17,15 +17,23 @@
         padding: 5px 35px;
         border-radius: 10px;
         border: 2px solid black;
+        text-transform: uppercase;
     }
 </style>
 <body>
-    <button class="bag-btn" onclick="alert('Item has been added to Bag')" >Add to Bag</button>
-    <button id="wish-btn" onclick="alert('Item has been moved to Wishlist')">Move to Wishlist</button>
-    <button class="bag-btn" onclick="alert('Item has been added to Bag')" >Add 1+1 Sale Item</button>
+    <button class="bag-btn" onclick="cartQuantity++;document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+" >Add to Bag</button>
+    <button id="wish-btn" onclick="cartQuantity--;document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+">Move to Wishlist</button>
+    <button class="bag-btn" onclick="cartQuantity+=2;document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+" >Add 1+1 Sale Item</button>
+
+    <h1 id="cart-summary"></h1>
 
     <script>
-        alert("Welcome")
+        let cartQuantity = 0;
+        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`
+
     </script>
 </body>
 </html>

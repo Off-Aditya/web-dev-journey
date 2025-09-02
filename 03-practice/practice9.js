@@ -1,14 +1,15 @@
-let age =1;
-let gender ='female';
+let age = 24;
+let gender = 'male';
+let finalDiscount;
 
-if (gender === 'female' ){
-    console.log('50% off')
+if (age <= 5) {
+    finalDiscount = 100
+} else if (gender === 'female' || age <= 8) {
+    finalDiscount = 50
+} else if (age > 65) {
+    finalDiscount = 30
+} else {
+    finalDiscount = 0
 }
 
-if (age < 5){
-    console.log('100% off')
-} else if(age < 8){
-    console.log('50% off')
-} else if(age>65){
-    console.log('30%')
-}
+console.log(`${finalDiscount}% off`)

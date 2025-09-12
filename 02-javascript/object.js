@@ -86,7 +86,7 @@ price = 750;
 //     'item-name' : 'Cotton-Striped T-Shirt',
 //     price : price 
 // };
-product = {
+let product1 = {
     company : 'Mango',
     'item-name' : 'Cotton-Striped T-Shirt',
     price
@@ -96,3 +96,10 @@ console.log(price)
 
 
 // Method Shorthand
+let product2 = {
+    company : 'Mango',
+    itemName : 'Cotton-Striped T-Shirt',
+    displayPrice : function() {
+        return `$${this.price.toFixed(2)}`;
+    }
+}

@@ -35,6 +35,7 @@
       }
     ],
     "button-type": "off",
-    "css-prefix-order": "off"
+    "css-prefix-order": "off",
+    "disown-opener": "off"
   }
 }

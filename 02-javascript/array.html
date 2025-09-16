@@ -8,18 +8,39 @@
 
 <body>
     <script>
-        let firstArray = [1, 2, 5, 3, 8, 2, 1];
-        let secondArray = ['sasa', 12, 'haj', null, true];
-        let obj = {name: 'Adi'};
-        
-        //console.log(myArray);
+        //let firstArray = [1, 2, 5, 3, 8, 2, 1];
+        //let secondArray = ['sasa', 12, 'haj', null, true];
+        //let obj = {name: 'Adi'};
+
+        //console.log(firstArray);
+        //console.log(firstArray.length);
         //console.log(typeof myArray);
         //console.log(myArray[4]);
         
 
-        console.log(Array.isArray(obj));
-        console.log(Array.isArray(secondArray));
-        console.log(Array.isArray(firstArray));
+        //console.log(Array.isArray(obj));
+        //console.log(Array.isArray(secondArray));
+        //console.log(Array.isArray(firstArray));
+
+        let arr = [1, 2, 3];
+        console.log(arr);
+        arr.push(6);
+        
+        console.log(arr);
+        console.log('Popped: ' + arr.pop());
+        
+        console.log(arr);
+        
+        arr.unshift(0);
+        console.log(arr);
+        
+        arr.shift(0);
+        console.log(arr);
+
+        let arr1 = [3, 5, 7, 6];
+        arr1.splice(1, 2);
+        console.log(arr1)
+
     </script>
 </body>
 

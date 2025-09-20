@@ -1,0 +1,63 @@
+
+// let arr = [5, 6];
+// arr.unshift(4);
+// arr.push(7);
+// console.log(arr);
+
+// function find(Arr, pos) {
+//     return arr[pos - 1];
+// }
+// console.log(find(arr, 3));
+
+// function arrCopy(arr) {
+//     return arr.slice(0, arr.length);
+// }
+
+// let arr1 = [4, 5, 6, 7, 8];
+// let copy = arrCopy(arr1);
+// copy[0] = null;
+// console.log(arr1);
+// console.log(copy);
+
+// function isPrime(num) {
+//     for (let i = 2; i < num; i++) {
+//         if (num % i == 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// let num = 2;
+// let i = 0;
+// while (true) {
+//     if(isPrime(num)){
+//         console.log(num);
+//         i++;
+//         if(i >= 5){
+//             break;
+//         }
+//     }
+//     num++;
+// }
+
+// for (let i = 10; i >= 0; i--) {
+//     console.log(i);
+// }
+
+// let p = [1, -6, 5, 7, -98];
+// for (let i = 0; i < p.length; i++) {
+//     if(p[i] < 0){
+//         continue;
+//     }
+//     console.log(p[i]);
+// }
+
+let str = ['Adi', 'you', 'are', 'the', 'loser'];
+let res = '';
+for (let i = 0; i < str.length; i++) {
+    res += str[i] + ' ';
+}
+console.log(res);
+// OR
+console.log(str.join("❤️"))

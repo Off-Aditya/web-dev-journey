@@ -14,7 +14,7 @@
         transition: transform 0.3s ease;
     }
 
-    .grow {
+    .js-grow {
         transform: scale(2);
     }
 </style>
@@ -36,7 +36,7 @@
         let buttonElement = document.querySelector('#btn');
         let growBehaviour = () => {
             setTimeout(() => {
-                buttonElement.classList.add('grow');
+                buttonElement.classList.add('js-grow');
             }, 2000);
         };
         buttonElement.addEventListener('click', growBehaviour);

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Assistant", sans-serif;
+}
+
+/* header */
+nav {
+    padding: 21px 21px 21px 27px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+#myntra-logo {
+    height: 36px;
+    padding-left: 20px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+    padding: 31px 0;
+    border-bottom: 5px solid #ffffff;
+}
+
+.nav-items a:hover {
+    border-bottom: 4px solid #f54e77;
+}
+
+sup {
+    color: #ff3f6c;
+}
+
+.searchBar {
+    height: 40px;
+    min-width: 250px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+#searchIcon {
+    height: 20px;
+    padding: 10px;
+    box-sizing: content-box;
+    color: #696e79;
+    background-color: #f5f5f6;
+    border-radius: 5px 0 0 5px;
+}
+
+.searchBar input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.desktop-action {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+    color: #000;
+    margin-right: 10px;
+}
+
+.desktop-action .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.desktop-action .icon span {
+    font-size: 24x;
+    margin-bottom: 4px;
+    font-weight: 200;
+}
+
+.desktop-action .icon .actionName {
+    font-weight: 700;
+}
+
+/* main */
+.banner_container {
+    margin: 40px 0;
+}
+
+.banner_image {
+    width: 100%;
+}
+
+.category_heading {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.4em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.offer_items {
+    width: 250px;
+}
+
+/* footer */
+.footer_container{
+    padding: 30px 0px 40px 0px;
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_column{
+    width: 155px;
+    display: flex;
+    vertical-align: top;
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+.footer_column h3{
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.footer_column a{
+    text-decoration: none;
+    color: #696b79;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.copyright{
+    color: #94969f;
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #94969f;
+}
+
+.copyright .bold{
+    font-weight: 700;
+    color: #526CD0;
+}

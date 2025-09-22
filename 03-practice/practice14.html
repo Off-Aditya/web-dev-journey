@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 14</title>
+</head>
+<style>
+    #btn {
+        margin: 50px;
+        padding: 10px 20px;
+        font-size: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    .grow {
+        transform: scale(2);
+    }
+</style>
+
+<body>
+    <button id="btn" class="">Click Me</button>
+
+    <script>
+        let multiply = (num1, num2) => num1 * num2;
+        console.log(multiply(23, 54));
+
+        let runTwice = function (num1, num2, num3, twiceMultiply) {
+            let mul1 = twiceMultiply(num1, num2);
+            return (twiceMultiply(mul1, num3));
+        }
+        console.log(runTwice(12, 45, 23, multiply));
+
+
+        let buttonElement = document.querySelector('#btn');
+        let growBehaviour = () => {
+            setTimeout(() => {
+                buttonElement.classList.add('grow');
+            }, 2000);
+        };
+        buttonElement.addEventListener('click', growBehaviour);
+
+
+        let arr = [1, 5, 2, 1, 5, 3, 4];
+        console.log(arr);
+        let sum = 0;
+        arr.forEach(num => {
+            sum += num;
+        });
+        console.log(sum);
+
+        let square = arr.map((num) => num * num);
+        console.log(square)
+    </script>
+</body>
+
+</html>

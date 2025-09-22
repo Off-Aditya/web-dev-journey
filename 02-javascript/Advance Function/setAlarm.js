@@ -14,4 +14,4 @@ let alarm = () => console.log(`Subah ho gyi, Mamu ${new Date()}`);
 
 // clearTimeout(timerId);
 
-setInterval(alarm, 1000);
+setInterval(alarm, 5000);
